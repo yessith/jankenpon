@@ -1,0 +1,123 @@
+:root {
+  --shadow: #ff295e;
+  --background: #35363d;
+  --text-color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+/*  */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--background);
+  background-image: url(./img/Taieri.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+  outline: none;
+}
+
+.main {
+  height: 90%;
+  width: 700px;
+  background-color: var(--background);
+  border: 2px solid var(--shadow);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main-head {
+  max-width: 700px;
+}
+
+.main-box, .main-options__container {
+  padding: 0 10px;
+}
+
+.main-box {
+  height: 100px;
+  margin: 40px 0;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main-options__container {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-options__container--img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-options__container--img img {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+figcaption {
+  margin-top: 20px;
+  width: 53px;
+}
+
+@media only screen and (min-width:600px) {
+  .main-box {
+    width: 60%;
+    align-self: center;
+  }
+}
